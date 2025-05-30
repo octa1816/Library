@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>My Book Library</h1>
+    <p>
+      With this app, you can log every book you read by adding the title, author, page count, and reading status. Easily and visually keep track of your past, present, and future readings. Ideal for readers who want everything in one place!
+    </p>
+  </header>
+
+  <!-- Formulario para ingresar libros -->
+  <form id="book-form">
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="Enter the title" required />
+
+    <label for="author">Author</label>
+    <input type="text" id="author" placeholder="Enter the author's name" required />
+
+    <label for="pages">Pages</label>
+    <input type="number" id="pages" placeholder="Enter page count" required />
+
+    <label for="status">Status</label>
+    <select id="status" required>
+      <option value="">-- Select status --</option>
+      <option value="read">Read</option>
+      <option value="not-read">Not Read</option>
+    </select>
+
+    <!-- Botón para agregar libro -->
+    <button type="submit" id="new-book-btn">Add New Book</button>
+  </form>
+
+  <!-- Contenedor completo de la sección Library -->
+<section id="library-section">
+    <h2 class="section-title">Library</h2>
+  
+    <!-- Acá se insertan las tarjetas dinámicamente -->
+    <div id="library">
+      <!-- EJEMPLO de una tarjeta de libro -->
+      <div class="book-card">
+        <p class="book-author"><strong>Author:</strong> Nombre del autor</p>
+        <p class="book-pages"><strong>Pages:</strong> 123</p>
+        <p class="book-status"><strong>Status:</strong> Read</p>
+        <button class="remove-btn">Remove</button>
+        <button class="toggle-read-btn">Toggle Read Status</button>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
